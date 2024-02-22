@@ -4,6 +4,9 @@
 
 This project provides a comprehensive simulation environment for a Secure Access Service Edge (SASE) scenario, integrating Software-Defined Wide Area Network (SD-WAN) technologies and remote work models. Built using the Virtual Networks over Linux (VNX) framework, it enables the deployment and testing of advanced network configurations, including virtualized network functions, edge computing, and integrated security services.
 
+![SCENARIO](https://github.com/ivalenzuelan/SASE-SDWAN/assets/125378917/aea11af9-6126-4f1e-89c5-f9612bde3a99)
+
+
 ## Features
 
 - **SD-WAN Simulation:** Demonstrates the setup and management of a software-defined wide area network, offering insights into network optimization, application routing, and bandwidth management.
