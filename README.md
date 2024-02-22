@@ -14,7 +14,7 @@ This project provides a comprehensive simulation environment for a Secure Access
 ## Prerequisites
 
 - Linux environment with support for LXC (Linux Containers).
-- VNX Framework installed and properly configured ([VNX Installation Guide](http://www.dit.upm.es/vnx/wiki/index.php/Vnx-install)).
+- VNX Framework installed and properly configured ([VNX Installation Guide](http://web.dit.upm.es/vnxwiki/index.php/Docintro)).
 - Basic understanding of networking concepts, SD-WAN, and SASE architectures.
 
 ## Installation
