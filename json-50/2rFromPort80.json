@@ -1,0 +1,3 @@
+{"dpid": 1, "priority": 45001, "cookie": 202001, "match": {  "in_port": 3, "ipv4_src":"10.20.2.0/24", "ip_proto": 6, "tcp_src": 80, "eth_type": 2048 }, "actions": [{"type":"OUTPUT", "port":2}]}
+
+
