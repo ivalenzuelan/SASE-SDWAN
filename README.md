@@ -57,4 +57,4 @@ Contributions to enhance the scenario or documentation are welcome. Please submi
 
 ## License
 
-[Specify the license under which the project is offered (e.g., MIT, GPL, etc.)]
+[TFG Developed by Iñigo Valenzuela Nuñez with Carlos Lentisco based on an SD-WAN practice scenario developed within the Communications Networking and within the Research Group on Networking and Virtualisation of Communication Services (GIROS) of the Department of Telematic Systems Engineering of the UPM]
