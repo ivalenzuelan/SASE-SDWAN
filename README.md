@@ -62,9 +62,9 @@ Contributions to enhance the scenario or documentation are welcome. Please submi
 
 TFG Developed by Iñigo Valenzuela Nuñez with Carlos Mariano Lentisco Sánchez based on an SD-WAN practice scenario developed within the Communications Networking and within the Research Group on Networking and Virtualisation of Communication Services (GIROS) of the Department of Telematic Systems Engineering of the UPM
 
-# SD-WAN Virtual Lab Guide
+# SD-WAN Virtual Installation Guide
 
-Welcome to the SD-WAN Virtual Lab, where you will explore SD-WAN concepts, virtualization, and the 5G network using the VNX (Virtual Networks over Linux) tool. This lab focuses on virtualized SD-WAN Edge devices leveraging OpenFlow for network management.
+Virtualized installaion of SD-WAN Edge devices leveraging OpenFlow for network management.
 
 ## Overview
 
@@ -102,19 +102,11 @@ This virtual lab scenario demonstrates the integration of SD-WAN Edge devices wi
 1. Open a terminal in the VM.
 2. Gain root access: `sudo su`.
 3. Navigate to the scenario directory: `cd /home/upm/Desktop/sdw-p1`.
-4. Start the VNX scenario: `vnx -f sdw_edge.xml -t`.
-
-## Working with the Lab
-
-- Explore connectivity, manage SD-WAN policies, and analyze traffic flows within the virtual lab.
-- The SDN controllers for SD-WAN Edge devices must be started manually by executing `./ryu-50.sh` on each device's terminal.
+4. Start the VNX scenario: `vnx -f sase_tfg.xml -t`.
 
 ## Cleanup
 
-To release the scenario and clean up resources, run: `vnx -f sdw_edge.xml -P`.
+To release the scenario and clean up resources, run: `vnx -f sase_tfg.xml -P`.
 
-## Conclusion
-
-This guide provides a comprehensive walkthrough to set up a virtual SD-WAN environment for educational purposes. It aims to offer hands-on experience with SD-WAN technology, focusing on network virtualization and management.
 
 
