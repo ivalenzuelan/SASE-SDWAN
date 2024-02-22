@@ -61,3 +61,60 @@ Contributions to enhance the scenario or documentation are welcome. Please submi
 ## License
 
 TFG Developed by Iñigo Valenzuela Nuñez with Carlos Mariano Lentisco Sánchez based on an SD-WAN practice scenario developed within the Communications Networking and within the Research Group on Networking and Virtualisation of Communication Services (GIROS) of the Department of Telematic Systems Engineering of the UPM
+
+# SD-WAN Virtual Lab Guide
+
+Welcome to the SD-WAN Virtual Lab, where you will explore SD-WAN concepts, virtualization, and the 5G network using the VNX (Virtual Networks over Linux) tool. This lab focuses on virtualized SD-WAN Edge devices leveraging OpenFlow for network management.
+
+## Overview
+
+This virtual lab scenario demonstrates the integration of SD-WAN Edge devices within a network, aiming to encapsulate corporate traffic over a public IP network using SD-WAN technologies. The practice environment is built using VNX to deploy advanced network scenarios on Linux systems.
+
+## Prerequisites
+
+- **VirtualBox**: Free virtualization software for Linux, Windows, and macOS. [Download here](https://www.virtualbox.org/)
+- **VNXSDNNFVLAB2020-v2.ova**: A pre-configured Virtual Machine (VM) for the SD-WAN practice. [Download link](http://idefix.dit.upm.es/download/vnx/vnx-vm/VNXSDNNFVLAB2020-v2.ova)
+
+## Installation Instructions
+
+### Step 1: VirtualBox Setup
+
+1. Download and install VirtualBox from the official website.
+2. Install the VM VirtualBox Extension Pack for additional features.
+
+### Step 2: Import the Virtual Machine
+
+1. Download the VNXSDNNFVLAB2020-v2.ova file to your local system.
+2. In VirtualBox, go to **File > Import Appliance**. Select the downloaded `.ova` file and follow the prompts to import.
+
+### Step 3: Starting the Virtual Machine
+
+1. Once imported, select the VM in VirtualBox and click **Start**.
+2. Inside the VM, you'll find shortcuts to essential tools such as a terminal, Firefox, and Wireshark on the desktop.
+
+### Step 4: Scenario Setup
+
+1. Use Firefox within the VM to download the SD-WAN scenario package: [sdw-p1.tgz](http://idefix.dit.upm.es/download/coit-sdw/sdw-p1.tgz).
+2. Extract it to the desktop for easy access.
+
+### Step 5: Launching the Scenario
+
+1. Open a terminal in the VM.
+2. Gain root access: `sudo su`.
+3. Navigate to the scenario directory: `cd /home/upm/Desktop/sdw-p1`.
+4. Start the VNX scenario: `vnx -f sdw_edge.xml -t`.
+
+## Working with the Lab
+
+- Explore connectivity, manage SD-WAN policies, and analyze traffic flows within the virtual lab.
+- The SDN controllers for SD-WAN Edge devices must be started manually by executing `./ryu-50.sh` on each device's terminal.
+
+## Cleanup
+
+To release the scenario and clean up resources, run: `vnx -f sdw_edge.xml -P`.
+
+## Conclusion
+
+This guide provides a comprehensive walkthrough to set up a virtual SD-WAN environment for educational purposes. It aims to offer hands-on experience with SD-WAN technology, focusing on network virtualization and management.
+
+
