@@ -1,0 +1,15 @@
+# Regla para ping ICMP
+alert icmp any any -> any any (msg:"Haciendo ping...!"; sid:1000004;)
+
+# Regla para el puerto TCP 80
+alert tcp any 80 -> any any (msg:"Acceso al puerto 80 detectado!"; sid:1000003;)
+
+# Regla para tráfico desde la Red de la Corporación
+alert ip any any -> 10.20.1.0/24 any (msg:"Trafico desde la Red de la Corporacion!"; sid:1000005;)
+
+# Regla para conexión SCP (generar una alerta)
+alert tcp any 22 -> any any (msg:"Se detecto una conexion SCP!"; sid:1000002;)
+
+# Regla para transferencia de archivos SCP (registrar el archivo)
+log tcp any 22 -> any any (msg:"Transferencia de archivo SCP!"; content:"SCP"; nocase; file_data; sid:1000008;)
+

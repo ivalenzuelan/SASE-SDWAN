@@ -1,0 +1,11 @@
+<vnx_cfg>
+  <vm name="h11" win="0,0,600,350"/>
+  <vm name="h21" win="600,0,600,350"/>
+  <vm name="r1" win="0,0,600,350" status="minimized"/>
+  <vm name="r2" win="0,0,600,350" status="minimized"/>
+  <vm name="sdedge1" win="0,370,600,350"/>
+  <vm name="sdedge2" win="600,370,600,350"/>
+  <vm name="nat1" win="0,0,600,350" status="minimized"/>
+  <vm name="nat2" win="0,0,600,350" status="minimized"/>
+  <vm name="isp" win="0,0,600,350" status="minimized"/>
+</vnx_cfg>

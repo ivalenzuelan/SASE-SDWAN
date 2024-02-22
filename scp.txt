@@ -1,0 +1,1 @@
+scp root@10.20.1.2:/root/hola.txt /root

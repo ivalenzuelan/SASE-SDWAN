@@ -1,0 +1,26 @@
+# Archivo de configuración de Snort
+
+# Configurar la interfaz de red en la que Snort debe escuchar
+var HOME_NET any
+
+# Configurar la red o rango de direcciones IP de la red externa
+var EXTERNAL_NET any
+
+# Configurar otros preprocesadores según sea necesario
+preprocessor stream5_global: track_tcp yes, track_udp yes
+
+# Configurar reglas de detección
+include /etc/snort/rules/Myrules.rules
+
+# Configurar opciones de registro (logging)
+var RULE_PATH /etc/snort/rules
+var SO_RULE_PATH /etc/snort/so_rules
+var PREPROC_RULE_PATH /etc/snort/preproc_rules
+
+# Especificar el directorio y los nombres de archivo de registro
+var LOGDIR /var/log/snort
+var LOGFILE snort.log
+
+# Habilitar la salida de registro de paquetes
+output unified2: filename snort.u2, limit 128
+
