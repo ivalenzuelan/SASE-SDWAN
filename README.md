@@ -96,6 +96,7 @@ This virtual lab scenario demonstrates the integration of SD-WAN Edge devices wi
 
 1. Use Firefox within the VM to download the SD-WAN scenario package: [sdw-p1.tgz](http://idefix.dit.upm.es/download/coit-sdw/sdw-p1.tgz).
 2. Extract it to the desktop for easy access.
+3. In the shared folder copy all the files that are in this repository.
 
 ### Step 5: Launching the Scenario
 
@@ -103,6 +104,14 @@ This virtual lab scenario demonstrates the integration of SD-WAN Edge devices wi
 2. Gain root access: `sudo su`.
 3. Navigate to the scenario directory: `cd /home/upm/Desktop/sdw-p1`.
 4. Start the VNX scenario: `vnx -f sase_tfg.xml -t`.
+
+### Step 6: Configuring the Scenario
+
+1. Open each SDEDGE console.
+2. Access the console with the credentials.
+3. Excute the ./ryu-XX.sh (shell script in each machine).
+4. Start the VNX scenario: `vnx -f sase_tfg.xml -t`.
+5**. Configure the Snort by opening a new sdedge0 terminal an executing the available `./snort-50.sh` and in other console the `sudo -i` and `./iniciaSnort.sh`
 
 ## Cleanup
 
